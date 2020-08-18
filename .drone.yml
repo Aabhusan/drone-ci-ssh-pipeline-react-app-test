@@ -24,9 +24,17 @@ steps:
         - cd /home/ubuntu/test
         - npm install 
         - npm run-script build
+      when:
+        status:
+            - success
+            - failure
 
     - name: install nginx and reverse proxy
       commands:
         - sudo apt install nginx -y
         - sudo mv /home/ubuntu/test/nginx_conf/default /etc/nginx/sites-enabled/
-        - sudo service nginx restart 
+        - sudo service nginx restart
+      when:
+        status:
+            - success
+            - failure
