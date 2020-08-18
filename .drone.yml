@@ -16,8 +16,8 @@ steps:
         # - curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -   
         # - sudo apt-get install nodejs -y
         - sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash 
-        - export NVM_DIR="$HOME/.nvm" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-        # - export NVM_DIR="$HOME/.nvm" 11  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+        - echo "export NVM_DIR="$HOME/.nvm" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"" > ~/.bashrc
+        - source ~/.bashrc
         - nvm install v12.18.3 -y
         - mkdir /home/ubuntu/test
         - cp . -r /home/ubuntu/test
