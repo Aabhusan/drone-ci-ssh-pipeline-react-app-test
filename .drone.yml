@@ -4,11 +4,11 @@ name: default
 
 server:
     host:
-      from_secret: host
+        from_secret: host
     user:
-      from_secret: username
+        from_secret: username
     ssh_key:
-      from_secret: sshkey
+        from_secret: ssh_key
 steps:
     - name: install node and dependencies
       commands:
