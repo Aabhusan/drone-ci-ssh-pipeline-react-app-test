@@ -8,7 +8,7 @@ server:
     user:
       from_secret: username
     ssh_key:
-      from_secret: ssh_key
+      from_secret: sshkey
 steps:
     - name: install node and dependencies
       commands:
