@@ -28,5 +28,5 @@ steps:
     - name: install nginx and reverse proxy
       commands:
         - sudo apt install nginx -y
-        - mv /home/ubuntu/test/nginx_conf/default /etc/nginx/sites-enabled/
-        - sudo service nginx restart
+        - sudo mv /home/ubuntu/test/nginx_conf/default /etc/nginx/sites-enabled/
+        - sudo service nginx restart 
