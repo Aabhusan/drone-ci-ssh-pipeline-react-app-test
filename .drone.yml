@@ -18,14 +18,14 @@ steps:
         # - sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash 
         # - export NVM_DIR="$HOME/.nvm" 11  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
         # - nvm install v12.18.3 -y
-        - mkdir ~/test
-        - cp . -r ~/test
-        - cd ~/test
+        - mkdir /home/ubuntu/test
+        - cp . -r /home/ubuntu/test
+        - cd /home/ubuntu/test
         - npm install 
         - npm build
 
     - name: install nginx and reverse proxy
       commands:
         - sudo apt install nginx -y
-        - mv ~/test/nginx_conf/default /etc/nginx/sites-enabled/
+        - mv /home/ubuntu/test/nginx_conf/default /etc/nginx/sites-enabled/
         - sudo service nginx restart
