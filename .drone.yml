@@ -19,7 +19,7 @@ steps:
         # - echo "export NVM_DIR="$HOME/.nvm" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"" > ~/.bashrc
         # - source ~/.bashrc
         # - nvm install v12.18.3 -y
-        - mkdir /home/ubuntu/test
+        #- mkdir /home/ubuntu/test
         - cp . -r /home/ubuntu/test
         - cd /home/ubuntu/test
         - npm install 
