@@ -20,7 +20,7 @@ steps:
         # - source ~/.bashrc
         # - nvm install v12.18.3 -y
         #- mkdir /home/ubuntu/test
-        - cp . -r /home/ubuntu/test
+        - sudo cp . -r /home/ubuntu/test
         - cd /home/ubuntu/test
         - npm install 
         - npm run-script build
