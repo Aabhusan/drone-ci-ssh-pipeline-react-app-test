@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React with tekkon tekknologies
+          Learn React with Devops tutorials by Aabhusan From Nepal
         </a>
       </header>
     </div>
